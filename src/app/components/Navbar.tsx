@@ -66,11 +66,11 @@ const Navbar = () => {
           {/* Register Button */}
           <button className="bg-[#4b2e2b] hover:bg-[#432825] p-[0.7] rounded-2xl overflow-hidden cursor-pointer">
             <div
-              onClick={() => router.push("/regiter")}
+              onClick={() => router.push("/register")}
               className="relative bg-white/5 px-4 py-2 text-white rounded-2xl border border-white/10
                   before:absolute before:inset-0.5 before:rounded-2xl before:border-t before:border-white/20"
             >
-              View cart
+              Register
             </div>
           </button>
           {/*Cart button*/}
