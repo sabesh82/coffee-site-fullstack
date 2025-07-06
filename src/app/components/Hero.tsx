@@ -13,7 +13,7 @@ const Hero = () => {
     >
       <div className="w-full max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2">
         <div className="mt-25 md:mt-30">
-          <h1 className="text-justify md:text-start text-6xl md:text-7xl font-bold">
+          <h1 className="text-justify md:text-start text-6xl custom-metallic-text md:text-7xl font-bold">
             Crafted Coffee, Curated Comfort.
           </h1>
           <p className="text-lg md:text-xl mt-4 text-start">
@@ -21,17 +21,24 @@ const Hero = () => {
             - From bean to brew — elevate your everyday experience -
           </p>
           <div className="flex items-center gap-3 md:gap-4 mt-6 md:mt-12 justify-start ml-2">
-            <Link
-              href="/cart"
-              className="px-3 py-1 bg-[#6e3b11] text-white rounded-xl border-3 border-white hover:scale-102 cursor-pointer"
-            >
-              View cart
-            </Link>
-            <button
-              onClick={() => router.push("/#menu")}
-              className="px-3 py-1 bg-[#6e3b11] text-white rounded-xl border-3 border-white hover:scale-102 cursor-pointer"
-            >
-              View menu
+            <button className="bg-[#4b2e2b] hover:bg-[#432825] p-[0.7] rounded-2xl overflow-hidden cursor-pointer">
+              <div
+                onClick={() => router.push("/cart")}
+                className="relative bg-white/5 px-4 py-2 text-white rounded-2xl border border-white/10
+                  before:absolute before:inset-0.5 before:rounded-2xl before:border-t before:border-white/20"
+              >
+                View cart
+              </div>
+            </button>
+
+            <button className="bg-[#4b2e2b] hover:bg-[#432825] p-[0.7] rounded-2xl overflow-hidden cursor-pointer">
+              <div
+                onClick={() => router.push("/#menu")}
+                className="relative bg-white/5 px-4 py-2 text-white rounded-2xl border border-white/10
+                  before:absolute before:inset-0.5 before:rounded-2xl before:border-t before:border-white/20"
+              >
+                View menu
+              </div>
             </button>
           </div>
         </div>

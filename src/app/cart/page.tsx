@@ -33,7 +33,7 @@ export default function CartPage() {
         const { items } = await getCartItems(apiClient);
         setCartItems(items);
       } catch (error: any) {
-        toast.error("Failed to load cart.");
+        toast.error("Failed to load cart. you are not authorized");
       } finally {
         setLoading(false);
       }

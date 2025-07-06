@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { GiCoffeeBeans } from "react-icons/gi";
 import { HiMenu, HiX } from "react-icons/hi";
+import { BsCartCheck } from "react-icons/bs";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("#home");
@@ -26,7 +27,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#4b2e2b] via-[#8a664c] to-[#fdf6e3] text-white">
-      <div className="w-full max-w-7xl mx-auto px-4 h-18 flex items-center justify-between">
+      <div className="w-full max-w-7xl mx-auto px-4 h-18 flex items-center justify-between relative">
         {/* Logo */}
         <div className="flex items-center gap-3">
           <GiCoffeeBeans className="text-white size-5 md:size-7" />
@@ -60,13 +61,26 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Register Button */}
-        <button
-          onClick={() => router.push("/register")}
-          className="hidden md:flex bg-[#4b2e2b] px-5 py-2 text-white rounded-2xl font-bold hover:bg-[#573936] border-white border-2"
-        >
-          Register
-        </button>
+        {/*button section*/}
+        <div className="flex gap-5">
+          {/* Register Button */}
+          <button className="bg-[#4b2e2b] hover:bg-[#432825] p-[0.7] rounded-2xl overflow-hidden cursor-pointer">
+            <div
+              onClick={() => router.push("/regiter")}
+              className="relative bg-white/5 px-4 py-2 text-white rounded-2xl border border-white/10
+                  before:absolute before:inset-0.5 before:rounded-2xl before:border-t before:border-white/20"
+            >
+              View cart
+            </div>
+          </button>
+          {/*Cart button*/}
+          <button
+            onClick={() => router.push("/cart")}
+            className="hidden md:flex absolute top-5.5 left-320"
+          >
+            <BsCartCheck className="size-6 text-black cursor-pointer font-semibold" />
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}

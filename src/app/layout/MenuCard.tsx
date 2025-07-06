@@ -48,12 +48,8 @@ export default function MenuCard({ product }: MenuCardProps) {
       {/*buttons*/}
       <div className="flex mt-2 items-center justify-between">
         <div className="flex gap-2">
-          <button className="bg-[#e6ab7b] hover:bg-[#b48966] transition duration-150 text-black px-2 py-1 border-2 border-[#8e4306] rounded-xl cursor-pointer">
-            Hot
-          </button>
-          <button className="bg-[#e6ab7b] hover:bg-[#b48966] transition duration-150 text-black px-2 py-1 border-2 border-[#8e4306] rounded-xl cursor-pointer">
-            Cold
-          </button>
+          <p className="text-md text-[#281402]">Regular | </p>
+          <p className="text-md text-[#281402]">price: ${product.price}</p>
         </div>
         {/*cart section*/}
         <div

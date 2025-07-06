@@ -39,7 +39,9 @@ export default function Menu() {
       className="w-full min-h-screen flex items-center justify-center bg-gradient-to-r from-[#b89b84] via-[#e9d7c3] to-[#fffaf3] pt-25 pb-15"
     >
       <div className="flex flex-col items-center px-5">
-        <h1 className="text-5xl mb-8 font-semibold text-[#4b2e2b]">Our Menu</h1>
+        <h1 className="text-5xl mb-8 font-semibold custom-metallic-text1">
+          Our Menu
+        </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {products.map((product) => (

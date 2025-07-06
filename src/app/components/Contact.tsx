@@ -11,10 +11,10 @@ const Contact = () => {
       className="w-full min-h-screen flex items-center justify-center bg-gradient-to-r from-[#b89b84] via-[#e9d7c3] to-[#fffaf3] relative pt-10"
     >
       <div className="flex flex-col text-center px-5 pb-15 pt-10">
-        <div className="mb-6 flex justify-center">
-          <FaCoffee className="text-4xl text-[#4b2e2b]" />
+        <div className="mb-4 flex justify-center">
+          <FaCoffee className="text-4xl custom-metallic-text" />
         </div>
-        <p className="text-4xl font-semibold mb-4 text-[#4b2e2b]">
+        <p className="text-4xl font-semibold mb-4 custom-metallic-text1">
           Let us chat! Our coffee-loving team is all ears.
         </p>
         <p className="text-2xl text-gray-700 mb-15">

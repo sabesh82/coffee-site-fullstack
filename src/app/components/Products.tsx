@@ -26,7 +26,7 @@ const Products = () => {
     >
       <div className="flex flex-col items-center px-5">
         <div>
-          <h1 className="text-5xl mb-10 font-semibold text-[#4b2e2b] text-center">
+          <h1 className="text-5xl mb-10 font-semibold custom-metallic-text1 text-center">
             Our Premium Products
           </h1>
         </div>
