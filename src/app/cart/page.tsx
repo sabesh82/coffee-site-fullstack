@@ -111,7 +111,7 @@ export default function CartPage() {
                           handleQuantityChange(item.id, item.quantity - 1)
                         }
                         disabled={item.quantity === 1}
-                        className="px-2 py-1 text-sm bg-gray-200 rounded disabled:opacity-50"
+                        className="px-2 py-1 text-sm bg-gray-200 rounded disabled:opacity-50 cursor-pointer"
                       >
                         -
                       </button>
@@ -120,7 +120,7 @@ export default function CartPage() {
                         onClick={() =>
                           handleQuantityChange(item.id, item.quantity + 1)
                         }
-                        className="px-2 py-1 text-sm bg-gray-200 rounded"
+                        className="px-2 py-1 text-sm bg-gray-200 rounded cursor-pointer"
                       >
                         +
                       </button>
@@ -133,7 +133,7 @@ export default function CartPage() {
                     </p>
                     <button
                       onClick={() => handleRemove(item.id)}
-                      className="text-sm text-red-600 hover:underline mt-1"
+                      className="text-sm text-red-600 hover:underline mt-1 cursor-pointer"
                     >
                       Remove
                     </button>
