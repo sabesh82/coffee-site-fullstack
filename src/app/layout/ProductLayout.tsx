@@ -17,7 +17,9 @@ const ProductCard = ({
         className="h-44 w-68 mb-3 rounded-xl hover:scale-101 border-2 border-[#6e3b11]"
       />
       <p className="text-2xl font-semibold text-center mb-3">{name}</p>
-      <p className="text-xs text-center mb-6 font-semibold whitespace-nowrap">{desc}</p>
+      <p className="text-xs text-center mb-6 font-semibold sm:whitespace-nowrap">
+        {desc}
+      </p>
     </div>
   );
 };
