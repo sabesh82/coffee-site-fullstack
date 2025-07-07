@@ -51,7 +51,7 @@ const LoginForm = () => {
       <div className="flex flex-col items-center justify-center">
         {/*heading section*/}
         <div className="flex flex-col gap-1 mb-7 ">
-          <h1 className="text-gray-900 text-bold text-4xl text-center">
+          <h1 className="text-gray-900 text-bold text-3xl md:text-4xl text-center">
             Welcome Back
           </h1>
           <p className="text-sm text-center text-gray-500">
@@ -133,7 +133,7 @@ const LoginForm = () => {
             </button>
           </div>
 
-          <div className="flex justify-center">
+          <div className="flex justify-center mb-12">
             <p className="text-xs text-gray-500">
               Don&apos;t Have An Account?{" "}
               <span className="text-blue-500 cursor-pointer">

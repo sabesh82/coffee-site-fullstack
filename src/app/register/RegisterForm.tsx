@@ -50,7 +50,7 @@ const RegisterForm = () => {
     >
       <div className="flex flex-col items-center justify-center">
         <div className="flex flex-col gap-1 mb-5">
-          <h1 className="text-gray-900 text-bold text-4xl ">
+          <h1 className="text-gray-900 text-bold text-3xl md:text-4xl text-center">
             Create an Account
           </h1>
           <p className="text-sm text-center text-gray-500">

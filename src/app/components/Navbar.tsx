@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import { GiCoffeeBeans } from "react-icons/gi";
 import { HiMenu, HiX } from "react-icons/hi";
 import { BsCartCheck } from "react-icons/bs";
+import { IoLogInOutline } from "react-icons/io5";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("#home");
@@ -36,10 +37,18 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="absolute top-5 right-4 md:hidden text-black"
+          className="absolute top-5.5 right-4 md:hidden text-black"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <HiX size={25} /> : <HiMenu size={25} />}
+        </button>
+
+        {/*mobile login button*/}
+        <button
+          className="absolute top-5.5 right-12 md:hidden text-black"
+          onClick={() => router.push("/register")}
+        >
+          <IoLogInOutline size={25} />
         </button>
 
         {/* Desktop Nav Links */}
@@ -64,7 +73,7 @@ const Navbar = () => {
         {/*button section*/}
         <div className="flex gap-5">
           {/* Register Button */}
-          <button className="bg-[#4b2e2b] hover:bg-[#432825] p-[0.7] rounded-2xl overflow-hidden cursor-pointer">
+          <button className="hidden md:flex bg-[#4b2e2b] hover:bg-[#432825] p-[0.7] rounded-2xl overflow-hidden cursor-pointer">
             <div
               onClick={() => router.push("/register")}
               className="relative bg-white/5 px-4 py-2 text-white rounded-2xl border border-white/10

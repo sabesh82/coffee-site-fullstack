@@ -2,7 +2,6 @@ import { headers } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";
 import jwt, { JwtPayload } from "jsonwebtoken";
 import handleError from "./handleError";
-import { cookieKeys } from "@/config/cookies.config";
 
 export default async function privateRoute(
   request: NextRequest,
@@ -36,7 +35,6 @@ export default async function privateRoute(
     // Execute the callback with user info
     return await cb(decoded, token);
   } catch (error) {
-    // Handle token expiration specifically
     if (error instanceof jwt.TokenExpiredError) {
       return NextResponse.json(
         {

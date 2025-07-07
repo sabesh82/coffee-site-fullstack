@@ -33,7 +33,7 @@ const page = () => {
             <Image
               src={reg1}
               alt=""
-              className="h-160 w-full rounded-2xl"
+              className="h-160 w-full rounded-2xl hidden sm:block"
             ></Image>
           </div>
         </div>

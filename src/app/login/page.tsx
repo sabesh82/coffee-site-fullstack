@@ -15,7 +15,7 @@ const page = () => {
               <GiCoffeeBeans className="size-5" />
               <p className="text-lg">Caffinity</p>
             </div>
-            <div className="mt-30">
+            <div className="mt-20 md:mt-30">
               <LoginForm />
             </div>
             <div className="absolute bottom-1 left-1">
@@ -33,7 +33,7 @@ const page = () => {
             <Image
               src={login}
               alt=""
-              className="h-160 w-full rounded-2xl"
+              className="h-160 w-full rounded-2xl hidden sm:block"
             ></Image>
           </div>
         </div>

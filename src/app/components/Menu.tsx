@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import MenuCard from "../layout/MenuCard";
 import { useApi } from "@/providers/apiProvider";
-import { addToCart } from "@/services/cartService";
 import toast from "react-hot-toast";
 
 interface Product {
