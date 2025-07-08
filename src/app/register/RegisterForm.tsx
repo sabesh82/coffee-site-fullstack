@@ -155,7 +155,7 @@ const RegisterForm = () => {
           </div>
 
           <button
-            className="w-full mt-2 px-2 py-[0.395rem] text-white bg-gradient-to-r border-1 border-gray-300 from-gray-900 via-gray-600 to-gray-900 rounded-md hover:-translate-y-0.5"
+            className="w-full mt-2 px-2 py-[0.395rem] text-white bg-gradient-to-r border-1 border-gray-300 from-gray-900 via-gray-600 to-gray-900 rounded-md hover:-translate-y-0.5 cursor-pointer"
             type="submit"
             disabled={isLoading}
           >

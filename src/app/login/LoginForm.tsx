@@ -10,6 +10,7 @@ import Cookie from "js-cookie";
 import { cookieKeys } from "@/config/cookies.config";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
+import toast from "react-hot-toast";
 
 const LoginForm = () => {
   const {
@@ -40,8 +41,11 @@ const LoginForm = () => {
           reset();
 
           router.push("/");
-        } catch (error) {
-          console.log({ error });
+        } catch (error: any) {
+          const message =
+            error?.response?.data?.error?.message ||
+            "Failed to login. Check email or password.";
+          toast.error(message);
         } finally {
           setIsLoading(false);
         }
@@ -109,7 +113,7 @@ const LoginForm = () => {
           <button
             type="submit"
             disabled={isLoading}
-            className="w-full mt-2 px-2 py-[0.395rem] text-white bg-gradient-to-r border-1 border-gray-300 from-gray-900 via-gray-600 to-gray-900 rounded-md hover:-translate-y-0.5"
+            className="w-full mt-2 px-2 py-[0.395rem] text-white bg-gradient-to-r border-1 border-gray-300 from-gray-900 via-gray-600 to-gray-900 rounded-md hover:-translate-y-0.5 cursor-pointer"
           >
             {isLoading ? "Logging in..." : "Log In"}
           </button>

@@ -131,12 +131,24 @@ export default function CartPage() {
                     <p className="text-sm text-gray-600">
                       Price: ${item.product.price}
                     </p>
-                    <button
-                      onClick={() => handleRemove(item.id)}
-                      className="text-sm text-red-600 hover:underline mt-1 cursor-pointer"
-                    >
-                      Remove
-                    </button>
+                    <div className="flex items-center gap-7 mt-1">
+                      <button
+                        onClick={() => handleRemove(item.id)}
+                        className="text-sm text-red-600 hover:underline cursor-pointer"
+                      >
+                        Remove
+                      </button>
+                      <button
+                        onClick={() =>
+                          toast.success(
+                            `Proceeding to checkout: ${item.product.name}`
+                          )
+                        }
+                        className="text-sm text-green-700 hover:underline cursor-pointer"
+                      >
+                        Checkout
+                      </button>
+                    </div>
                   </div>
                 </div>
                 <p className="text-lg font-bold">

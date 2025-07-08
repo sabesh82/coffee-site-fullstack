@@ -32,7 +32,7 @@ const Contact = () => {
               <p className="mb-2 font-bold text-xl">Chat to sales</p>
               <p className="mb-4 text-md">Speak to our friendly team</p>
               <a href="test@gmail.com" className="underline">
-                sabeshtest@gmail.com
+                sabesh27testing@gmail.com
               </a>
             </div>
           </div>
@@ -46,7 +46,7 @@ const Contact = () => {
               <p className="mb-2 font-bold text-xl">Chat to support</p>
               <p className="mb-4 text-md">We are here to help</p>
               <a href="test@gmail.com" className="underline">
-                sabeshtest@gmail.com
+                sabesh27testing@gmail.com
               </a>
             </div>
           </div>
