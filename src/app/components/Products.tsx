@@ -4,17 +4,20 @@ import ProductCard from "../layout/ProductLayout";
 const Products = () => {
   const products = [
     {
-      image: "/product1.jpg",
+      image:
+        "https://res.cloudinary.com/dlseuftkj/image/upload/v1752235406/product1_f1wdny.jpg",
       name: "Lavazza",
       desc: "Rich Italian espresso blend, smooth & aromatic.",
     },
     {
-      image: "/product2.jpg",
+      image:
+        "https://res.cloudinary.com/dlseuftkj/image/upload/v1752235450/product2_tmccac.webp",
       name: "Nespresso",
       desc: "Premium coffee capsules for rich, barista-style espresso",
     },
     {
-      image: "/product3.jpg",
+      image:
+        "https://res.cloudinary.com/dlseuftkj/image/upload/v1752235459/product3_pkdln8.jpg",
       name: "Keurig",
       desc: "Fast, convenient single-serve coffee with bold flavors.",
     },

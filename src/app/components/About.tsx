@@ -13,7 +13,7 @@ const About = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
           <img
-            src="/about.jpg"
+            src="https://res.cloudinary.com/dlseuftkj/image/upload/v1752235516/about_poesbb.jpg"
             alt=""
             className="rounded-xl border-2 border-[#8e4306]"
           />

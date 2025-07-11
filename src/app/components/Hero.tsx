@@ -54,12 +54,20 @@ const Hero = () => {
         </div>
 
         <div className="md:flex items-center justify-center px-4">
-          <img src="/img.png" alt="" className="h-60 w-60 md:h-130 md:w-130" />
+          <img
+            src="https://res.cloudinary.com/dlseuftkj/image/upload/v1752235123/img_ooupjs.png"
+            alt=""
+            className="h-60 w-60 md:h-130 md:w-130"
+          />
         </div>
       </div>
 
       <div className="hidden md:flex absolute bottom-3 left-3">
-        <img src="/design.png" alt="" className="h-55 w-70" />
+        <img
+          src="https://res.cloudinary.com/dlseuftkj/image/upload/v1752235286/design_ef3rgz.png"
+          alt=""
+          className="h-55 w-70"
+        />
       </div>
 
       <div className="hidden md:flex absolute top-50 right-23">
